@@ -97,15 +97,14 @@ div#header{
 /* logo */
 div#logo{
     border: 0;
-    background: #E2E2E2;
-    padding: 35px 24px;
+    padding: 38px 10px;
     float: left;
     margin: 14px 0 0 0;
 }
 div#logo h1{
 	margin:0;
 	padding:0;
-	font-size: 20px;
+	font-size: 36px;
 }
 div#logo span{
 	font-size:14px;

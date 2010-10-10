@@ -152,7 +152,6 @@
 			<!-- logo -->
 			<div id="logo">
 				<h1><?php echo $site_name; ?></h1>
-				<span><?php echo $site_tagline; ?></span>
 			</div>
 			<!-- / logo -->
 			
