@@ -21,6 +21,12 @@
 						<input type="hidden" name="longitude" id="longitude" value="<?php echo $form['longitude']; ?>">
 						<div class="big-block">
 							<h1><?php echo Kohana::lang('ui_main.reports_submit_new'); ?></h1>
+							<div class="info-box">
+								<h3>Before you add your report...</h3>
+								<ul>
+									<li>Please note that the site is designed to show the impact of <em>local</em> cuts which affect local people, so whilst adding the cuts at your local leisure centre is perfectly fine, simply adding general Government Budget cuts in isn't really what we'd like to see on the map here. Thanks!</li>
+							   	</ul>
+							</div>
 							<?php
 								if ($form_error) {
 							?>
