@@ -127,19 +127,12 @@
 
 			<!-- searchbox -->
 			<div id="searchbox">
-				<!-- languages -->
-				<div class="language-box">
-					<form>
-						<?php print form::dropdown('l', $locales_array, $l, ' onChange="this.form.submit()" '); ?>
-					</form>
-				</div>
-				<!-- / languages -->
 
 				<!-- searchform -->
 				<div class="search-form">
 					<form method="get" id="search" action="<?php echo url::site() . 'search/'; ?>">
 						<ul>
-							<li><input type="text" name="k" value="" class="text" /></li>
+							<li><input type="text" name="k" value="" class="text" placeholder="Search.." /></li>
 							<li><input type="submit" name="b" class="searchbtn" value="search" /></li>
 						</ul>
 					</form>

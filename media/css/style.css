@@ -253,7 +253,7 @@ div.language-box select{
 /* searchform */
 div.search-form{
     padding: 0px;
-    margin: 10px 15px 10px 5px;
+    margin: 10px 10px 8px;
     float: left;
 }
 
@@ -271,11 +271,11 @@ div.search-form ul li{
 }
 
 div.search-form input.text{
-    padding: 2px 0px 2px 0px;
+    padding: 2px 2px;
     border: #9E9E9E 1px solid;
     margin: 0;
     background: #EEEEEE;
-    width: 160px;
+    width: 156px;
     font-size: 13px;
 }
 
