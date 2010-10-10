@@ -40,11 +40,6 @@
 			</div>
 			<!-- / footer menu -->
 
-      
-			<h2 class="feedback_title" style="clear:both">
-				<a href="http://feedback.ushahidi.com/fillsurvey.php?sid=5"><?php echo Kohana::lang('ui_main.feedback'); ?></a>
-			</h2>
-
  
 		</div>
 		<!-- / footer content -->
