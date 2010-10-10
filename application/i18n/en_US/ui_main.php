@@ -318,7 +318,7 @@
 	'reports_photos' => 'Upload Photos',
 	'reports_return' => 'Return to the reports page',
 	'reports_select_city' => 'Select a City',
-	'reports_submitted' => 'Your Report has been submitted to our staff for review. We will get back to you shortly if necessary.',
+	'reports_submitted' => 'Thanks for adding a report. It will appear on the site shortly after the staff have checked it.',
 	'reports_submit_new' => 'Submit a New Report',
 	'reports_time' => 'Time',
 	'reports_timeline' => 'Timeline',
