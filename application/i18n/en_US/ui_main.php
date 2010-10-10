@@ -156,7 +156,7 @@
 	'inactive' => '',
 	'inbox' => 'Inbox',
 	'incident' => 'Incident',
-	'incidents_listed' => 'Incidents <span>(from the map, listed in chronological order)</span>',
+	'incidents_listed' => 'Most Recent Reported Cuts',
 	'incidents_nearby' => 'Incidents Nearby',
 	'incident_location' => 'Incident Location',
 	'include' => 'Include',

@@ -563,7 +563,20 @@ div.content-block-right{
     background: #FFFFFF;
     width: 427px;
     float: right;
-}
+}      
+
+div.content-block-both {
+    padding: 20px;
+    background: #FFFFFF;
+    width: auto;
+}                  
+div.content-block-both h5 { border-bottom: 1px solid #eee; font-size: 22px; padding-bottom: 7px; margin-bottom: 10px; text-align: center; }     
+div.content-block-both div.content-block-left, div.content-block-both div.content-block-right {
+	margin: 0px;
+	padding: 0px;
+	width: 440px;
+}                     
+div.content-block-end { clear: both; }
 
 /* site footer */
 div.site-footer{
