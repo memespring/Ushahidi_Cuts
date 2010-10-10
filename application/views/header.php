@@ -175,16 +175,6 @@
 						{
 							?><li><a href="<?php echo url::site() . "reports/submit" ?>" <?php if ($this_page == 'reports_submit') echo 'class="active"'; ?>><?php echo Kohana::lang('ui_main.submit'); ?></a></li><?php
 						}
-						?>
-						<li><a href="<?php echo url::site() . "alerts" ?>" <?php if ($this_page == 'alerts') echo 'class="active"'; ?>><?php echo Kohana::lang('ui_main.alerts'); ?></a></li>
-						<?php
-						// Contact Page
-						if ($site_contact_page)
-						{
-							?>
-							<li><a href="<?php echo url::site() . "contact" ?>" <?php if ($this_page == 'contact') echo 'class="active"'; ?>><?php echo Kohana::lang('ui_main.contact'); ?></a></li>
-							<?php
-						}
 
 						// Commenting out "How to Help" page for now
 						/*
