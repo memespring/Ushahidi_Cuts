@@ -118,29 +118,25 @@
 					?> 
 
 					<div class="report-description">
-						<h3>Related Mainstream News of Incident</h3>
+						<h3>Cited News Sources</h3>
 						<table cellpadding="0" cellspacing="0">
 							<tr class="title">
 								<th class="w-01">TITLE</th>
 								<th class="w-02">SOURCE</th>
-								<th class="w-03">DATE</th>
 							</tr>
 							<?php
-								foreach ($feeds as $feed)
-								{
-									$feed_id = $feed->id;
-									$feed_title = text::limit_chars($feed->item_title, 40, '...', True);
-									$feed_link = $feed->item_link;
-									$feed_date = date('M j Y', strtotime($feed->item_date));
-									$feed_source = text::limit_chars($feed->feed->feed_name, 15, "...");
+								foreach ($incident_news as $news_item)
+								{                                           
+									$news_source = parse_url($news_item);
 							?>
 							<tr>
 								<td class="w-01">
-									<a href="<?php echo $feed_link; ?>" target="_blank">
-									<?php echo $feed_title ?></a>
+									<a href="<?php echo htmlspecialchars($news_item); ?>" target="_blank">
+									<?php echo htmlspecialchars($news_item); ?></a>
+								</td>  
+								<td class="w-02">
+									<?php echo htmlspecialchars($news_source['host']);?>
 								</td>
-								<td class="w-02"><?php echo $feed_source; ?></td>
-								<td class="w-03"><?php echo $feed_date; ?></td>
 							</tr>
 							<?php
 							}
@@ -153,7 +149,7 @@
 
 
 					<div class="report-description">
-						<h3>Incident Report(s)</h3>
+						<h3>Nearby Incident Reports</h3>
 						<table cellpadding="0" cellspacing="0">
 							<tr class="title">
 								<th class="w-01">TITLE</th>

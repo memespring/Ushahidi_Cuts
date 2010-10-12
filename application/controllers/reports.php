@@ -764,6 +764,10 @@ class Reports_Controller extends Main_Controller {
 										->orderby('item_date', 'desc')
 										->find_all();
 
+        // News links
+
+		$this->template->content->incident_news = $incident_news;
+
 		// Video links
 
 		$this->template->content->incident_videos = $incident_video;
