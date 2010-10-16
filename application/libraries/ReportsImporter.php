@@ -94,11 +94,12 @@ class ReportsImporter {
 		$incident->incident_verified = (isset($row['VERIFIED']) AND $row['VERIFIED'] == 'YES') ? 1 :0;
 		$incident->save();
 		$this->incidents_added[] = $incident->id;
+
 		// STEP 3: SAVE CATEGORIES
 		if(isset($row['CATEGORY'])) {
 			$categorynames = explode(',',trim($row['CATEGORY']));
 			foreach($categorynames as $categoryname) {
-				$categoryname = strtoupper(trim($categoryname)); // There seems to be an uppercase convention for categories... Don't know why.
+				#$categoryname = strtoupper(trim($categoryname)); // There seems to be an uppercase convention for categories... Don't know why.
 				if($categoryname != '') {
 					if(!isset($this->category_ids[$categoryname])) {
 						$this->notices[] = 'There exists no category "'.htmlspecialchars($categoryname).'" in database yet. Added to database.';
@@ -120,6 +121,18 @@ class ReportsImporter {
 				} // empty categoryname not allowed
 			} // add categories to incident
 		} // if CATEGORIES column exists
+
+		// STEP 4: SAVE NEWS SOURCE #hack for wherearethecuts.org
+		if(isset($row['NEWS SOURCE'])) {
+    		$news = new Media_Model();
+    		$news->location_id = $location->id;
+    		$news->incident_id = $incident->id;
+    		$news->media_type = 4;		// News
+    		$news->media_link = $row['NEWS SOURCE'];
+    		$news->media_date = $incident->incident_date;
+    		$news->save();
+    	}
+				
 		return true;
 	}
 }
