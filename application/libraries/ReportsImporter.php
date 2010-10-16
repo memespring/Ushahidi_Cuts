@@ -99,6 +99,7 @@ class ReportsImporter {
 		if(isset($row['CATEGORY'])) {
 			$categorynames = explode(',',trim($row['CATEGORY']));
 			foreach($categorynames as $categoryname) {
+			    $categoryname = trim($categoryname);
 				#$categoryname = strtoupper(trim($categoryname)); // There seems to be an uppercase convention for categories... Don't know why.
 				if($categoryname != '') {
 					if(!isset($this->category_ids[$categoryname])) {
