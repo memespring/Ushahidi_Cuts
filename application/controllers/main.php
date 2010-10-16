@@ -206,9 +206,20 @@ class Main_Controller extends Template_Controller {
 		$this->template->content->total_items = ORM::factory('incident')
 			->where('incident_active', '1')
 			->limit('8')->count_all();
+		$this->template->content->total_items_col_two = ORM::factory('incident')
+			->where('incident_active', '1')
+			->limit('20')->count_all();
+			
 		$this->template->content->incidents = ORM::factory('incident')
 			->where('incident_active', '1')
 			->limit('10')
+			->orderby('incident_date', 'desc')
+			->with('location')
+			->find_all();        
+		$this->template->content->incidents_col_two = ORM::factory('incident')
+			->where('incident_active', '1')
+			->limit('10')
+			->offset('10')
 			->orderby('incident_date', 'desc')
 			->with('location')
 			->find_all();
