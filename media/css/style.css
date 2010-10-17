@@ -40,12 +40,12 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
     font-size: 150%;
-    color: #004276;
+    color: #2b2e72;
 }
 
 h2{
     font-size: 125%;
-    color: #004276;
+    color: #2b2e72;
     margin-bottom: .2em;
 }
 
@@ -78,13 +78,13 @@ body{
 }
 
 body#page{
-    background: #585858 url(../img/page-bg.jpg) 50% 0 repeat-x;
+    background: #fff;
 }
 
 /* wrapper setup */
 div.rapidxwpr{
     margin: auto;
-    width: 960px;
+    width: 100%;
 }
 
 /* header */
@@ -92,6 +92,7 @@ div#header{
     position: relative;
     height: 144px;
     margin: 0px 0px 0px 0px;
+    background:url(../img/header.png) no-repeat 0 50px;
 }
 
 /* logo */
@@ -194,7 +195,8 @@ div#footer{
     width: auto;
     clear: both;
     color: #fff;
-    background-color: #A8A8A8;
+    background: #cfe376;
+    border-top: #b8c678 10px solid;
     padding-bottom: 20px;
 }
 
@@ -321,8 +323,8 @@ div.submit-incident a:hover{
 
 /* mainmenu */
 div#mainmenu{
-    background: #C2C2C2;
-    border: #FFF 2px solid;
+    background: #cfe376;
+    border-bottom: #b8c678 10px solid;
     padding: 7px 10px;
 }
 
@@ -350,21 +352,18 @@ div#mainmenu a{
 }
 
 div#mainmenu a:hover{
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
-    background: #2E8AB8;
 }
 
 div#mainmenu a.active{
     display: block;
     position: relative;
-    padding: 7px 12px;
     overflow: hidden;
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
-    background: #2E8AB8;
 }
 
 /* filters */
@@ -400,7 +399,7 @@ div.filters ul li a{
 div.filters ul li a:hover, div.filters ul li a.active{
     color: #FFFFFF;
     padding: 0px 5px;
-    background: #3399CC;
+    background: #2b2e72;
     text-decoration: none;
 }
 
@@ -418,8 +417,8 @@ a.share{
 /* map */
 div.map {
     border: #999 1px solid;
-    width: 573px;
-    height: 366px;
+    width: 99.5%;
+    height: 500px;
 }
 #mapStatus
 {
@@ -429,7 +428,7 @@ div.map {
 	border-right: solid 1px #999;
 	border-bottom: solid 1px #999;
 	font-size: 10px;
-	width: 573px;
+	width: 99.5%;
 }
 #mapStatus div
 {
@@ -492,11 +491,7 @@ div.cat-filters span a{
 }
 
 ul.category-filters{
-    background: #E7E3DA;
-    border-top: #C7C2BC 7px solid;
-    border-bottom: #C7C2BC 7px solid;
     list-style: none;
-    padding: 12px 15px;
 }
 
 ul.category-filters li{
@@ -514,7 +509,6 @@ ul.category-filters li a{
     font-weight: bold;
     text-decoration: none;
     color: #3F3F3F;
-    border: #E7E3DA 1px solid;
     position: relative;
     line-height: 17px;
     overflow: hidden;
@@ -522,8 +516,7 @@ ul.category-filters li a{
 
 ul.category-filters li a:hover, ul.category-filters li a.active {
     color: #FFFFFF;
-    background-color: #3484AC;
-    border: #3484AC 1px solid;
+    background-color: #2b2d73;
 }
 
 ul.category-filters li.child{
@@ -1818,3 +1811,6 @@ div.green-box ul, div.info-box ul, div.red-box ul{
 .alert_confirm .label{
 	margin-bottom:10px;
 }
+
+/* hide */
+span.hide {display:none;}

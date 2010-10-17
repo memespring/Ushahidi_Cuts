@@ -144,20 +144,11 @@
 
 			<!-- logo -->
 			<div id="logo">
-				<h1><?php echo $site_name; ?></h1>
+				<h1><span class="hide"><?php echo $site_name; ?></span></h1>
 			</div>
 			<!-- / logo -->
 			
-			<?php
-			if (Kohana::config('settings.allow_reports'))
-			{
-				?><!-- submit incident -->
-			<div class="submit-incident clearingfix">
-				<a href="<?php echo url::site() . "reports/submit" ?>"><?php echo Kohana::lang('ui_main.submit'); ?></a>
-			</div>
-			<!-- / submit incident --><?php
-			}
-			?>
+
 		</div>
 		<!-- / header -->
 
