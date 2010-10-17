@@ -388,6 +388,7 @@
             map.addControl(new OpenLayers.Control.ScaleLine());
 			map.addControl(new OpenLayers.Control.LayerSwitcher());
 			
+			
 			// display the map projection
 			document.getElementById('mapProjection').innerHTML = map.projection;
 				

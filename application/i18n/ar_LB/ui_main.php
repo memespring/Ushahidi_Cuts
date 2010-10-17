@@ -319,7 +319,7 @@
 	'reports_return' => 'Return to the reports page',
 	'reports_select_city' => 'Select a City',
 	'reports_submitted' => 'Your Report has been submitted to our staff for review. We will get back to you shortly if necessary.',
-	'reports_submit_new' => 'Submit a New Report',
+	'reports_submit_new' => 'Report a new cut',
 	'reports_time' => 'Time',
 	'reports_timeline' => 'Timeline',
 	'reports_title' => 'Report Title',
