@@ -193,8 +193,7 @@
 									<div id="mapOutput"></div>
 								</div>
 								<div style="clear:both;"></div>
-								<?php /*
-								<div class="slider-holder">
+								<div class="slider-holder" style="display:none;">
 									<form action="">
 										<input type="hidden" value="0" name="currentCat" id="currentCat">
 										<fieldset>
@@ -207,8 +206,7 @@
 									</form>
 								</div>
 								<!-- / map -->
-								<div id="graph" class="graph-holder"></div>
-								*/ ?>
+								<div id="graph" class="graph-holder"  style="display:none;"></div>
 							</div>
 						</div>
 						<!-- / content column -->
