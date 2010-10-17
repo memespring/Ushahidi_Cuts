@@ -204,7 +204,7 @@ div#footer{
 
 div#underfooter{
     width:auto;
-    height: 28px;
+    height: 15px;
     background-color:#A8A8A8;
     position: relative;
     top: -28px;
@@ -581,14 +581,27 @@ div.site-footer{
 }
 
 /* footer menu */
-div.footermenu{
-    margin: 0 10px;
+div.footermenu{ 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	background: #fff;
+	border-radius: 4px;
+	color: #333;
+    margin: 0px 10px;
+	padding: 10px 8px 8px 10px;
     float: left;
+} 
+
+div.footermenu.project-credits {
+	clear: right;
+	float: right;
+	margin: 10px;
+	padding: 10px;
 }
 
 div.footermenu ul{
     list-style: none;
-    margin: 0 0 10px 0;
+    margin: 0 0 0px 0;
 }
 
 div.footermenu ul li{
@@ -597,8 +610,8 @@ div.footermenu ul li{
 }
 
 div.footermenu ul li a{
-    color: #FFFDCC;
-    border-left: #FFFDCC 1px solid;
+    color: #3764AA;
+    border-left: #3764AA 1px solid;
     padding: 0 10px;
     text-decoration: underline;
 }

@@ -35,7 +35,10 @@
 					<li><a class="item1" href="<?php echo url::site(); ?>"><?php echo Kohana::lang('ui_main.home'); ?></a></li>
 					<li><a href="<?php echo url::site()."reports/submit"; ?>"><?php echo Kohana::lang('ui_main.report_an_incident'); ?></a></li>
 				</ul>
-				<p><?php echo Kohana::lang('ui_main.copyright'); ?></p>
+				
+			</div>
+			<div class="footermenu project-credits">
+				<p>An <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a> project.</p>
 			</div>
 			<!-- / footer menu -->
 
