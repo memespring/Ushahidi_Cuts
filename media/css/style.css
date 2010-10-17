@@ -777,12 +777,12 @@ table.table-list tbody tr td a{
 
 div.location{
     float: right;
-    width: 430px;
+    width: 800px;
 }
 
 div.report-map{
     border: #CCCCCC 1px solid;
-    width: 428px;
+    width: 800px;
 }
 
 div.incident-notation{
@@ -808,7 +808,7 @@ div.incident-notation ul li{
 .report-map .map-holder {
 	overflow:hidden;
 	clear:both;
-	width:428px;
+	width:800px;
 	height:370px;
 }
 
