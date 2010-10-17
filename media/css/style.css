@@ -70,6 +70,8 @@ h6{
     color: #333333;
 }
 
+#spanCounter {position:absolute;top:0; left:0; background:#2b2e72; color:#fff; padding:5px 15px;}
+
 /* page setup */
 body{
     font-family: Arial, Helvetica, sans-serif;

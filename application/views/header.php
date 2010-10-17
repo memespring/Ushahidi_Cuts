@@ -145,6 +145,7 @@
 			<!-- logo -->
 			<div id="logo">
 				<h1><span class="hide"><?php echo $site_name; ?></span></h1>
+				<span id="spanCounter"><?php print number_format(Incident_Model::get_total_reports_by_verified(true)); ?> cuts reported so far!</span>
 			</div>
 			<!-- / logo -->
 			
