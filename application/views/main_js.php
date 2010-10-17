@@ -376,9 +376,9 @@
 			
 			
 			// Add Controls
-			map.addControl(new OpenLayers.Control.Navigation());
-			map.addControl(new OpenLayers.Control.Attribution());
-			map.addControl(new OpenLayers.Control.PanZoomBar({'zoomWheelEnabled':false}));
+			map.addControl(new OpenLayers.Control.Navigation({'zoomWheelEnabled': false}));
+			map.addControl(new OpenLayers.Control.Attribution({'zoomWheelEnabled': false}));
+			map.addControl(new OpenLayers.Control.PanZoomBar({'zoomWheelEnabled': false}));
 			map.addControl(new OpenLayers.Control.MousePosition(
 				{
 					div: document.getElementById('mapMousePosition'),
