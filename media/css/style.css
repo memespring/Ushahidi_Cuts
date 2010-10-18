@@ -97,6 +97,9 @@ div#header{
     background:url(../img/header.png) no-repeat 0 50px;
 }
 
+/* facebook */
+#divFacebook {position:absolute;top:14px;right:5px;}
+
 /* logo */
 div#logo{
     border: 0;
@@ -328,6 +331,7 @@ div#mainmenu{
     background: #cfe376;
     border-bottom: #b8c678 10px solid;
     padding: 7px 10px;
+    position:relative;
 }
 
 div#mainmenu ul{
