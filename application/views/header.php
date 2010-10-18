@@ -189,7 +189,7 @@
 					</ul>
                     <!-- bookface -->
                     <div id="divFacebook">
-                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwherearethecuts.org%2F&amp;layout=standard&amp;show_faces=true&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:80px;" allowTransparency="true"></iframe>
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwherearethecuts.org%2F&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:80px;" allowTransparency="true"></iframe>
                     </div>
 				</div>
 				<!-- / mainmenu -->
