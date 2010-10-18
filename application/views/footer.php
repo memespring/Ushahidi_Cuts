@@ -23,10 +23,6 @@
 		<!-- footer content -->
 		<div class="rapidxwpr floatholder">
  
-			<!-- footer credits -->
-			<div class="footer-credits">
-				Powered by <a href="http://www.ushahidi.com/"><img src="<?php echo url::base(); ?>/media/img/footer-logo.png" alt="Ushahidi" align="absmiddle" /></a>
-			</div>
 			<!-- / footer credits -->
 		
 			<!-- footer menu -->
@@ -38,8 +34,20 @@
 				
 			</div>
 			<div class="footermenu project-credits">
-				<p>An <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a> project.</p>
+			    <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a>
+				    <img src="<?php echo url::base(); ?>/media/img/okfn.png"/>
+				</a>
+				<p id="aboutokfn">
+				An <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a> project.
+				<br/>
+				The Open Knowledge Foundation is a<br/> not-for-profit organization promoting open knowledge.
+				</p>
+				<p id="poweredby">
+				Powered by <a href="http://www.ushahidi.com/"><img src="<?php echo url::base(); ?>/media/img/footer-logo.png" alt="Ushahidi" align="absmiddle" /></a>
+				</p>
 			</div>
+		
+			
 			<!-- / footer menu -->
 
  

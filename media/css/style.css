@@ -586,9 +586,6 @@ div.site-footer{
 
 /* footer menu */
 div.footermenu{ 
-	-moz-border-radius: 4px; 
-	-webkit-border-radius: 4px;
-	background: #fff;
 	border-radius: 4px;
 	color: #333;
     margin: 0px 10px;
@@ -601,7 +598,13 @@ div.footermenu.project-credits {
 	float: right;
 	margin: 10px;
 	padding: 10px;
+	width:350px;
+	text-align:right;
 }
+div.footermenu.project-credits img {float:right;margin-left:10px; vertical-align:top;}
+#poweredby {clear:right;padding-top:10px;padding-right:10px;}
+#poweredby img {position:relative; top:-5px;}
+#aboutokfn {padding-top:27px;}
 
 div.footermenu ul{
     list-style: none;
