@@ -33,7 +33,7 @@
 				'displayProjection': proj_4326
 				};
 			map = new OpenLayers.Map('map', options);
-			map.addControl( new OpenLayers.Control.LoadingPanel({minSize: new OpenLayers.Size(573, 366)}) );
+			map.addControl( new OpenLayers.Control.LoadingPanel({minSize: new OpenLayers.Size(800, 366)}) );
 			
 			<?php echo map::layers_js(FALSE); ?>
 			map.addLayers(<?php echo map::layers_array(FALSE); ?>);
@@ -97,7 +97,7 @@
 			
 			// display the map centered on a latitude and longitude (Google zoom levels)
 
-			map.setCenter(myPoint, 10);			
+			map.setCenter(myPoint, 12);			
 			
 			function onPopupClose(evt) {
 	            selectControl.unselect(selectedFeature);

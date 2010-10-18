@@ -78,10 +78,10 @@ div.olLayerDiv {
 .infowindow li{
 	list-style-type: square;
 }
-.infowindow a, .infowindow a:visited{
+.infowindow_meta a, .infowindow_meta a:visited{
 	color:#000;
 }
-.infowindow a:hover{
+.infowindow_meta a:hover{
 	text-decoration:none;
 }
 .infowindow .infowindow_meta{
