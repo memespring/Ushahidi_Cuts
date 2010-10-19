@@ -35,7 +35,7 @@
 			</div>
 			<div class="footermenu project-credits">
 			    <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a>
-				    <img src="<?php echo url::base(); ?>/media/img/okfn.png"/>
+				    <img src="<?php echo url::base(); ?>media/img/okfn.png"/>
 				</a>
 				<p id="aboutokfn">
 				An <a href="http://okfn.org/" title="Open Knowledge Foundation">Open Knowledge Foundation</a> project.
