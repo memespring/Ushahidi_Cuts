@@ -180,6 +180,9 @@
 								<!-- / map -->
 								<div id="graph" class="graph-holder"  style="display:none;"></div>
 							</div>
+							<div class="alerts_signup">
+								<a href="<?php echo url::site() . "alerts" ?>" title="Sign up for email alerts">Get email alerts of new cuts in your neighbourhood.</a>
+							</div>
 							<br/>
 						    <h3>Recently reported cuts</h3>
 							<table class="table-list">

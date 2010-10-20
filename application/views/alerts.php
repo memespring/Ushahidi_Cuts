@@ -70,30 +70,8 @@
 									<div class="holder">
 										<div class="box">
 											<label>
-												<?php
-													if ($form['alert_mobile_yes'] == 1) {
-														$checked = true;
-													}
-													else
-													{
-													 	$checked = false;
-													}
-													print form::checkbox('alert_mobile_yes', '1', $checked);
-												?>
-												<span><strong><?php echo Kohana::lang('ui_main.alerts_mobile_phone'); ?></strong><br /><?php echo Kohana::lang('ui_main.alerts_enter_mobile'); ?></span>
-											</label>
-											<span><?php print form::input('alert_mobile', $form['alert_mobile'], ' class="text long"'); ?></span>
-										</div>
-										<div class="box">
-											<label>
-												<?php
-													if ($form['alert_email_yes'] == 1) {
-														$checked = true;
-													}
-													else
-													{
-														$checked = false;
-													}
+												<?php   
+													$checked = true;
 													print form::checkbox('alert_email_yes', '1', $checked);
 												?>
 												<span><strong><?php echo Kohana::lang('ui_main.alerts_email'); ?></strong><br /><?php echo Kohana::lang('ui_main.alerts_enter_email'); ?></span>
@@ -106,24 +84,6 @@
 								<BR /><BR />
 								<a href="<?php echo url::site()."alerts/confirm";?>"><?php echo Kohana::lang('ui_main.alert_confirm_previous'); ?></a>
 							</div>
-							<?php print form::close(); ?>
-														<?php
-								if ($allow_feed == 1 )
-								{
-							?>
-							<div class="step-2-holder">
-								<div class="feed">
-									<h2><?php echo Kohana::lang('ui_main.alerts_rss'); ?></h2>
-									<div class="holder">
-										<div class="box" style="text-align:center;">
-											<a href="<?php echo url::site(); ?>feed/"><img src="<?php echo url::base(); ?>media/img/icon-feed.png" style="vertical-align: middle;" border="0"></a>&nbsp;<strong><a href="<?php echo url::site(); ?>feed/"><?php echo url::site(); ?>feed/</a></strong>
-										</div>
-									</div>
-								</div>
-							</div>
-							<?php
-								}
-							?>
 						</div>
 						<!-- end alerts block -->
 					</div>
