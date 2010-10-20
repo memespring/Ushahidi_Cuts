@@ -1841,14 +1841,14 @@ div.green-box ul, div.info-box ul, div.red-box ul{
 .alerts_signup a { 
 	border: 1px solid #9EAE5C;
     display: block; 
-	color: #000;
-	background: #D7E3A4;
+	text-decoration:underline;
+	background: #FFFF99;
 	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
 	padding: 10px;
 }              
-.alerts_signup a:hover, .alerts_signup a:active { background: #9CD7FF; border-color: #008CFF; }
+.alerts_signup a:hover, .alerts_signup a:active { background: #ffff90;}
 
 /* hide */
 span.hide {display:none;}

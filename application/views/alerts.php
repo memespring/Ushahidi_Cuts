@@ -19,6 +19,7 @@
 						<!-- start alerts block -->
 						<div class="big-block">
 							<h1><?php echo Kohana::lang('ui_main.alerts_get'); ?></h1>
+							<p>Choose your location and enter an email address to recieve alerts of new cuts near you.</p>
 							<?php
 							if ($form_error) {
 							?>
