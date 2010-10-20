@@ -181,7 +181,7 @@
 								<div id="graph" class="graph-holder"  style="display:none;"></div>
 							</div>
 							<div class="alerts_signup">
-								<a href="<?php echo url::site() . "alerts" ?>" title="Sign up for email alerts">Email me whenever there is a cut near me.</a>
+								<a href="<?php echo url::site() . "alerts" ?>" title="Sign up for email alerts">Email me whenever there is a cut near me</a>
 							</div>
 							<br/>
 						    <h3>Recently reported cuts</h3>

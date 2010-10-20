@@ -15,6 +15,9 @@
 ?>
 				<div id="main" class="clearingfix">
 					<div id="mainmiddle" class="floatbox withright">
+					<div class="alerts_signup">
+						<a href="<?php echo url::site() . "alerts" ?>" title="Sign up for email alerts">Email me whenever there is a cut near me</a>
+					</div>
 						<!-- start incident block -->
 						<div class="reports">
 							<div class="report-details">
