@@ -1849,6 +1849,9 @@ div.green-box ul, div.info-box ul, div.red-box ul{
 	padding: 10px;
 }              
 .alerts_signup a:hover, .alerts_signup a:active { background: #ffff90;}
+         
+.alert_response h2 { margin: 0px 0px 10px; }
+.alert_response p { margin: 5px 0px; }
 
 /* hide */
 span.hide {display:none;}

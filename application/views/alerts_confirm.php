@@ -21,49 +21,19 @@
 							<h1>Get Alerts</h1>
 							
 							<!-- Email Alert -->
-							<div class="green-box">
-								<?php
-								if ($alert_email)
-								{
-									echo "<h3>".Kohana::lang('alerts.email_ok_head')."</h3>";
-								}
-								?>
-								
+							<div class="green-box"> 
 								<div class="alert_response">
-									<?php 
-									if ($alert_email)
-									{
-										echo Kohana::lang('alerts.email_alert_request_created')."<u><strong>".
-											$alert_email."</strong></u>.".
-											Kohana::lang('alerts.verify_code');
-									}
-									?>
-									<div class="alert_confirm">
-										<div class="label">
-											<u><?php echo Kohana::lang('alerts.email_code'); ?></u>
-										</div>
-										<?php 
-										print form::open('/alerts/verify');
-										print "Verification Code:<BR>".form::input('alert_code', '', ' class="text"')."<BR>";
-										print "Email Address:<BR>".form::input('alert_email', $alert_email, ' class="text"')."<BR>";
-										print form::submit('button', 'Confirm My Alert Request', ' class="btn_submit"');
-										print form::close();
-										?>
-									</div>
+									<h2>Sign-up successful</h2>
+									<p class="email-alert">
+										Now check your email. Click the link in the email to confirm your alert.
+									</p>
+									<p>
+										<a href="<?php echo url::site().'alerts'?>">Sign up for another alert</a>
+									</p>
 								</div>
 							</div>
 							<!-- / Email Alert -->
 							
-							
-							<!-- Return -->
-							<div class="green-box">
-								<div class="alert_response">
-									<a href="<?php echo url::site().'alerts'?>">
-									<?php echo Kohana::lang('alerts.create_more_alerts'); ?>
-									</a>
-								</div>
-							</div>
-							<!-- / Return -->
 							
 						</div>
 						<!-- end alerts block -->
